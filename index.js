@@ -7,7 +7,9 @@ object[key]=value
 return object
 }
 function deleteFromObjectByKey(object, key){
-delete object.key;
+var newObj=ect.assign({},object)
+delete newObj.key
+return newObj
 }
 function destructivelyDeleteFromObjectByKey(object, key){
   delete object[key]
